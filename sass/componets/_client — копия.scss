@@ -14,32 +14,16 @@
 .client__list {
   display: flex;
   align-items: center;
-  margin: -15px;
-  flex-wrap: wrap;
-  padding: 0;
-
   margin-top: 50px;
-
-  @media (min-width: 1200px) {
-    flex-wrap: unset;
-  }
 }
 
 .client__list__item {
   height: 90px;
-  width: 210px;
-  margin: 15px;
-  flex-basis: calc((100% - 30px * 2) / 2);
+  width: 170px;
+}
 
-  @media (min-width: 768px) {
-    flex-basis: calc((100% - 30px * 3) / 3);
-  }
-
-  @media (min-width: 1200px) {
-    .client__list__item:not(:first-child) {
-      margin-left: 30px;
-    }
-  }
+.client__list__item:not(:first-child) {
+  margin-left: 30px;
 }
 
 .client__link {

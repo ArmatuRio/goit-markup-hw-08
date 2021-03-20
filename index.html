@@ -9,18 +9,27 @@
       href="https://fonts.googleapis.com/css2?family=Raleway:wght@700&family=Roboto:wght@400;700;900&display=swap"
       rel="stylesheet"
     />
-    <link rel="stylesheet" href="./css/modern-normalize.css" />
     <link rel="stylesheet" href="./css/main.css" />
   </head>
   <body>
     <!-- Шапка сайта -->
-    <header class="page__header">
+    <header class="page-header">
       <!-- ===CONTAINER=== -->
-      <div class="container page__header__container">
+      <div class="container page-header__container">
         <nav class="header__nav">
           <a href="./index.html" class="logo"
             ><span class="logo-web">Web</span>Studio</a
           >
+          <!-- Кнопка мобильного меню -->
+          <!-- <button
+            class="menu-toggle js-open-menu"
+            aria-expanded="false"
+            aria-controls="mobile-menu"
+          >
+            <svg class="close-mobile" width="40px" height="40px">
+              <use href="./images/icons2.svg#icon-menu_mobile"></use>
+            </svg>
+          </button> -->
 
           <ul class="site__nav">
             <li class="site__nav__item">
@@ -34,7 +43,6 @@
             </li>
           </ul>
         </nav>
-
         <ul class="site__nav__contacts">
           <li class="site__nav__contacts__item">
             <a href="mailto:info@devstudio.com" class="site__nav__link">
@@ -170,9 +178,11 @@
             <li class="card__group__item">
               <a href="" class="card__group__link"
                 ><img
+                  class="command__img"
+                  srcset="./images/member1.jpg 1x, ./images/member1@2x.jpg 2x"
                   src="./images/member1.jpg"
                   alt="Игорь Демьяненко"
-                  width="270"
+                  loading="lazy"
                 />
                 <h3 class="card__group__title">Игорь Демьяненко</h3>
                 <p class="card__group__text">Product Designer</p>
@@ -214,9 +224,9 @@
             <li class="card__group__item">
               <a href="" class="card__group__link"
                 ><img
+                  srcset="./images/member2.jpg 1x, ./images/member2@2x.jpg 2x"
                   src="./images/member2.jpg"
                   alt="Ольга Репина"
-                  width="270"
                 />
                 <h3 class="card__group__title">Ольга Репина</h3>
                 <p class="card__group__text">Frontend Developer</p>
@@ -258,9 +268,9 @@
             <li class="card__group__item">
               <a href="" class="card__group__link"
                 ><img
+                  srcset="./images/member3.jpg 1x, ./images/member3@2x.jpg 2x"
                   src="./images/member3.jpg"
                   alt="Николай Тарасов"
-                  width="270"
                 />
                 <h3 class="card__group__title">Николай Тарасов</h3>
                 <p class="card__group__text">Marketing</p>
@@ -301,9 +311,9 @@
             <li class="card__group__item">
               <a href="" class="card__group__link"
                 ><img
+                  srcset="./images/member4.jpg 1x, ./images/member4@2x.jpg 2x"
                   src="./images/member4.jpg"
                   alt="Михаил Ермаков"
-                  width="270"
                 />
                 <h3 class="card__group__title">Михаил Ермаков</h3>
                 <p class="card__group__text">UI Designer</p>
@@ -437,59 +447,61 @@
           <h2 class="footer__social__title">присоединяйтесь</h2>
 
           <!-- Соц сети -->
-          <div>
-            <ul class="footer__social__group">
-              <li class="footer__social__list">
-                <a href="" class="footer__social__link">
-                  <svg class="footer__social__icon" width="20px" height="20px">
-                    <use href="./images/icons2.svg#icon-instagram"></use>
-                  </svg>
-                </a>
-              </li>
-              <li class="footer__social__list">
-                <a href="" class="footer__social__link">
-                  <svg class="footer__social__icon" width="20px" height="20px">
-                    <use href="./images/icons2.svg#icon-twitter"></use>
-                  </svg>
-                </a>
-              </li>
-              <li class="footer__social__list">
-                <a href="" class="footer__social__link">
-                  <svg class="footer__social__icon" width="20px" height="20px">
-                    <use href="./images/icons2.svg#icon-facebook"></use>
-                  </svg>
-                </a>
-              </li>
-              <li class="footer__social__list">
-                <a href="" class="footer__social__link">
-                  <svg class="footer__social__icon" width="20px" height="20px">
-                    <use href="./images/icons2.svg#icon-linkedin"></use>
-                  </svg>
-                </a>
-              </li>
-            </ul>
-          </div>
+          <!-- <div> -->
+          <ul class="footer__social__group">
+            <li class="footer__social__list">
+              <a href="" class="footer__social__link">
+                <svg class="footer__social__icon" width="20px" height="20px">
+                  <use href="./images/icons2.svg#icon-instagram"></use>
+                </svg>
+              </a>
+            </li>
+            <li class="footer__social__list">
+              <a href="" class="footer__social__link">
+                <svg class="footer__social__icon" width="20px" height="20px">
+                  <use href="./images/icons2.svg#icon-twitter"></use>
+                </svg>
+              </a>
+            </li>
+            <li class="footer__social__list">
+              <a href="" class="footer__social__link">
+                <svg class="footer__social__icon" width="20px" height="20px">
+                  <use href="./images/icons2.svg#icon-facebook"></use>
+                </svg>
+              </a>
+            </li>
+            <li class="footer__social__list">
+              <a href="" class="footer__social__link">
+                <svg class="footer__social__icon" width="20px" height="20px">
+                  <use href="./images/icons2.svg#icon-linkedin"></use>
+                </svg>
+              </a>
+            </li>
+          </ul>
+          <!-- </div> -->
         </div>
 
-        <!-- ---Mailing--- -->
+        <!-- Mailing -->
         <div class="mailing__container">
           <p class="mailing__text">Подпишитесь на рассылку</p>
-          <form class="mailing__form">
-            <label class="mailing__label">
-              <input
-                class="mailing__input"
-                type="email"
-                name="email"
-                placeholder="E-mail"
-              />
-            </label>
-            <button class="subscribe__btn" type="submit">
-              Подписаться
-              <svg class="send__icon" width="24" height="24">
-                <use href="../images/icons2.svg#icon-send"></use>
-              </svg>
-            </button>
-          </form>
+          <div class="mailing__form__container">
+            <form class="mailing__form">
+              <label class="mailing__label">
+                <input
+                  class="mailing__input"
+                  type="email"
+                  name="email"
+                  placeholder="E-mail"
+                />
+              </label>
+              <button class="subscribe__btn" type="submit">
+                Подписаться
+                <svg class="send__icon" width="24" height="24">
+                  <use href="../images/icons2.svg#icon-send"></use>
+                </svg>
+              </button>
+            </form>
+          </div>
         </div>
       </div>
     </footer>
@@ -564,6 +576,22 @@
         </button>
       </div>
     </div>
+    <!-- ===Мобильное меню=== -->
+    <!-- <div class="menu-container js-menu-container" id="mobile-menu">
+      <button class="menu-toggle js-close-menu">
+        <svg class="close-mobile" width="40px" height="40px">
+          <use href="./images/icons2.svg#icon-close_mobile"></use>
+        </svg>
+      </button>
+      <ul class="mobile-menu">
+        <li><a href="" class="link">О нас</a></li>
+        <li><a href="" class="link">Работы</a></li>
+        <li><a href="" class="link">Контакты</a></li>
+        <li><a href="" class="link">Карьера</a></li>
+      </ul>
+    </div> -->
+
+    <script src="./js/mobile-menu.js"></script>
     <script src="./js/modal.js"></script>
   </body>
 </html>

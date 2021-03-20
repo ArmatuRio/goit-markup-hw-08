@@ -1,10 +1,5 @@
 .section__direction {
-  display: none;
   padding-top: 94px;
-
-  @media (min-width: 1200px) {
-    display: flex;
-  }
 }
 
 .section__direction__heading {

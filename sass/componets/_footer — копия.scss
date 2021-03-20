@@ -1,34 +1,19 @@
 /* ====Footer=== */
 .footer {
   background-color: #2f303a;
-  text-align: center;
-  display: flex;
 }
 
 .footer__container {
-  @media (min-width: 768px) {
-    flex-wrap: wrap;
-    justify-content: space-between;
-    display: flex;
-    align-items: baseline;
-  }
-
-  @media (min-width: 1200px) {
-    flex-wrap: inherit;
-    justify-content: inherit;
-  }
+  display: flex;
+  align-items: baseline;
 }
 
 .footer__adress__container {
   padding-top: 60px;
-  display: block;
-
-  @media (min-width: 1200px) {
-    display: flex;
-    flex-direction: column;
-    justify-content: flex-start;
-    align-items: flex-start;
-  }
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-start;
+  align-items: flex-start;
 }
 
 .footer__logo {
@@ -75,16 +60,8 @@
 /* ===Присоединяйтесь=== */
 
 .footer__social {
+  padding-left: 70px;
   align-items: baseline;
-
-  @media (min-width: 768px) {
-    // align-items: inherit;
-    // padding-left: 70px;
-  }
-  @media (min-width: 1200px) {
-    padding-left: 70px;
-    align-items: inherit;
-  }
 }
 
 .footer__social__title {
@@ -94,32 +71,19 @@
   line-height: 16px;
   text-transform: uppercase;
   color: var(--white-color);
-
-  @media (min-width: 1200px) {
-    text-align: left;
-  }
 }
 
 .footer__social__group {
   display: flex;
+  justify-content: space-between;
   text-align: center;
   padding-top: 20px;
-  align-items: center;
-  justify-content: center;
-
-  @media (min-width: 1200px) {
-    width: 206px;
-    justify-content: space-between;
-  }
+  width: 206px;
 }
 
 .footer__social__list {
   background: rgba(255, 255, 255, 0.1);
   border-radius: 50%;
-}
-
-.footer__social__list:not(:first-child) {
-  margin-left: 10px;
 }
 
 .footer__social__link {
@@ -144,16 +108,7 @@
 
 /* ====Mailing==== */
 .mailing__container {
-  padding-top: 60px;
-  padding-bottom: 60px;
-
-  @media (min-width: 1200px) {
-    width: 100%;
-    margin-top: 60px;
-  }
-  @media (min-width: 1200px) {
-    padding-left: 93px;
-  }
+  margin-left: 93px;
 }
 
 .mailing__text {
@@ -164,22 +119,13 @@
   font-size: 14px;
   line-height: 1.14;
   text-transform: uppercase;
-
-  @media (min-width: 1200px) {
-    text-align: left;
-  }
 }
 
 .mailing__form {
+  display: flex;
+  align-items: center;
   justify-content: center;
   margin-top: 20px;
-  @media (min-width: 768px) {
-  }
-  @media (min-width: 1200px) {
-    display: flex;
-    align-items: center;
-    justify-content: inherit;
-  }
 }
 
 .mailing__label {
@@ -199,8 +145,7 @@
 }
 
 .subscribe__btn {
-  display: inline-flex;
-  margin-top: 20px;
+  display: flex;
   justify-content: center;
   align-items: center;
   margin-left: 12px;
@@ -216,11 +161,6 @@
   letter-spacing: 0.06em;
   border: 1px solid transparent;
   border-radius: 4px;
-
-  @media (min-width: 1200px) {
-    display: flex;
-    margin-top: 0;
-  }
 }
 
 .send__icon {
