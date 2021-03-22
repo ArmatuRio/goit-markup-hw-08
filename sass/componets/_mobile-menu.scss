@@ -4,10 +4,18 @@
   left: 0;
   width: 100vw;
   height: 100vh;
-  padding: 30px;
-  background-color: tomato;
+  flex-direction: column;
+  display: flex;
+  justify-content: space-between;
+  overflow: auto;
+  background: #ffffff;
+  box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.04), 0px 2px 4px rgba(0, 0, 0, 0.08),
+    0px 1px 3px rgba(0, 0, 0, 0.16);
   transform: translateX(100%);
   transition: transform 250ms ease-in-out;
+  padding-top: 48px;
+  padding-bottom: 48px;
+  padding-left: 40px;
 }
 
 .menu-container.is-open {
@@ -15,14 +23,17 @@
 }
 
 .menu-toggle {
+  position: absolute;
+  top: 15px;
+  right: 15px;
   min-height: 40px;
   min-width: 40px;
   display: flex;
   align-items: center;
   justify-content: center;
 
-  margin: 0;
-  padding: 0;
+  // margin: 0;
+  // padding: 0;
   background-color: transparent;
   cursor: pointer;
   border: none;
@@ -55,10 +66,20 @@
 }
 
 .mobile-menu .link {
-  display: block;
-  padding: 10px;
-  color: #fff;
   text-decoration: none;
+  color: var(--tittle-text-color-black);
+  font-weight: 500;
+  font-size: 40px;
+  line-height: 1.17;
+  letter-spacing: 0.02em;
+}
+
+.mobile-menu .link--current {
+  color: #2196f3;
+}
+
+.mobile-menu__item:not(:first-child) {
+  margin-top: 32px;
 }
 
 .menu {
@@ -83,4 +104,60 @@
   .menu {
     display: none;
   }
+}
+
+.mobile-contacts {
+  margin-top: 302px;
+}
+
+.mobile-contacts__item {
+  margin-bottom: 32px;
+}
+
+.mobile-contacts__link--tel {
+  font-weight: 500;
+  font-size: 34px;
+  line-height: 40px;
+  text-decoration: none;
+  letter-spacing: 0.02em;
+  color: #2196f3;
+}
+
+.mobile-contacts__link {
+  font-weight: 500;
+  font-size: 24px;
+  line-height: 28px;
+  letter-spacing: 0.02em;
+  text-decoration: none;
+  color: #757575;
+}
+
+.mobile-networks {
+  font-style: inherit;
+  list-style: none;
+  padding: 0;
+  margin: 0;
+  display: flex;
+  flex-wrap: nowrap;
+  align-items: baseline;
+}
+
+// .mobile-networks__item:not(:last-child) {
+//   margin-right: 10px;
+// }
+
+.mobile-networks__link {
+  font-weight: 500;
+  font-size: 18px;
+  line-height: 1.22;
+  letter-spacing: 0.02em;
+  color: #2196f3;
+  text-decoration: none;
+}
+
+.mobile-networks__item:nth-child(-n + 3):after {
+  content: '';
+  border: 1px solid rgba(33, 33, 33, 0.2);
+  transform: rotate(90deg);
+  margin: 0 10px;
 }

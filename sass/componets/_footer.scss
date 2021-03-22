@@ -23,11 +23,17 @@
   padding-top: 60px;
   display: block;
 
+  @media (min-width: 768px) {
+    padding-left: 76px;
+  }
+
   @media (min-width: 1200px) {
     display: flex;
     flex-direction: column;
     justify-content: flex-start;
     align-items: flex-start;
+    padding-top: 60px;
+    padding-left: inherit;
   }
 }
 
@@ -38,7 +44,22 @@
   font-size: 26px;
   line-height: 1.19;
   text-decoration: none;
-  padding-bottom: 20px;
+
+  @media (min-width: 1200px) {
+    padding-bottom: 20px;
+  }
+}
+
+.contacts__adress__map {
+  font-size: 14px;
+  line-height: 24px;
+  letter-spacing: 0.03em;
+  color: var(--white-color);
+  padding-top: 20px;
+
+  @media (min-width: 1200px) {
+    padding-top: 0;
+  }
 }
 
 .contacts__adress {
@@ -49,8 +70,11 @@
 }
 
 .footer__contacts {
-  padding-top: 22px;
   padding-bottom: 58px;
+
+  @media (min-width: 1200px) {
+    padding-bottom: inherit;
+  }
 }
 
 .footer__contacts__item {
@@ -78,11 +102,13 @@
   align-items: baseline;
 
   @media (min-width: 768px) {
+    padding-right: 89px;
     // align-items: inherit;
     // padding-left: 70px;
   }
   @media (min-width: 1200px) {
     padding-left: 70px;
+    // padding-right: inherit;
     align-items: inherit;
   }
 }
@@ -147,12 +173,15 @@
   padding-top: 60px;
   padding-bottom: 60px;
 
-  @media (min-width: 1200px) {
+  @media (min-width: 768px) {
+    padding-top: inherit;
     width: 100%;
-    margin-top: 60px;
   }
   @media (min-width: 1200px) {
-    padding-left: 93px;
+    // margin-top: inherit;
+    // padding-left: 93px;
+    padding-top: inherit;
+    width: inherit;
   }
 }
 
@@ -167,23 +196,33 @@
 
   @media (min-width: 1200px) {
     text-align: left;
+    margin-bottom: 20px;
   }
 }
 
 .mailing__form {
   justify-content: center;
   margin-top: 20px;
+
   @media (min-width: 768px) {
+    display: grid;
   }
   @media (min-width: 1200px) {
+    margin-top: inherit;
+    justify-content: inherit;
     display: flex;
     align-items: center;
-    justify-content: inherit;
   }
 }
 
 .mailing__label {
   display: inline-block;
+  @media (min-width: 768px) {
+    margin-bottom: 20px;
+  }
+  @media (min-width: 1200px) {
+    margin-bottom: inherit;
+  }
 }
 
 .mailing__input {
@@ -217,9 +256,14 @@
   border: 1px solid transparent;
   border-radius: 4px;
 
+  @media (min-width: 768px) {
+    margin: auto;
+  }
+
   @media (min-width: 1200px) {
     display: flex;
     margin-top: 0;
+    margin-left: 12px;
   }
 }
 
