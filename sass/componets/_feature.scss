@@ -1,9 +1,13 @@
-.section {
-  padding-top: 94px;
-}
+// .section {
+//   padding-top: 94px;
+// }
 
 .section__feature {
-  padding-top: 94px;
+  padding-top: 60px;
+
+  @media (min-width: 1200px) {
+    padding-top: 94px;
+  }
 }
 
 .feature__list {
