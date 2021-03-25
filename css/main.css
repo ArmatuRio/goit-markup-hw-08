@@ -1545,7 +1545,6 @@ body {
   opacity: 1;
   -webkit-transition: opacity 250ms cubic-bezier(0.4, 0, 0.2, 1);
   transition: opacity 250ms cubic-bezier(0.4, 0, 0.2, 1);
-  overflow-y: scroll;
 }
 
 .backdrop.is-hidden {
@@ -1559,7 +1558,6 @@ body {
 }
 
 .modal {
-  margin-top: 20px;
   position: absolute;
   top: 50%;
   left: 50%;
